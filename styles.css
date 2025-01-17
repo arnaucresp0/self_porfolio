@@ -1,27 +1,121 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text for contrast */
     margin: 0;
     padding: 0;
 }
 
+/* Header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: #1e1e1e; /* Charcoal header background */
+    color: #f0f0f0; /* Light text color */
+    padding: 40px 20px;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #a3c9e2; /* Soft pastel blue */
+}
+
+/* Navigation */
+nav {
+    background-color: #2a2a2a; /* Medium dark grey */
+    color: #f0f0f0;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #f0f0f0;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #a3c9e2; /* Soft pastel blue hover */
+    border-radius: 5px;
+}
+
+/* Sections */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
+h2 {
+    border-bottom: 2px solid #a3c9e2; /* Accent border with pastel blue */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #1e1e1e; /* Dark card background */
+    border: 1px solid #2a2a2a; /* Subtle border */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: #2a2a2a; /* Medium dark footer */
+    color: #f0f0f0;
+    padding: 10px 0;
+}
+
+/* Links and Buttons */
+a {
+    color: #a3e4d7; /* Pale aqua for links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f9e79f; /* Soft pastel yellow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
