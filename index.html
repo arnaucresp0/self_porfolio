@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,47 +25,53 @@
     </nav>
     <main>
         <section id="about">
-            <h2>About Me</h2>
+            <h2>ABOUT ME</h2>
             <p>Hello there! This is my porfolio website designed by me, I'm an Electronics & Robotics Engineer with a passion for developing creative projects. I specialize in hardware, robotics, and embedded systems design.</p>
         </section>
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
+            <h2>PROJECTS</h2>
+            <div class="project-card">
                 <h3 class="dropdown-title">ROS2 navigation with a quadruped robot</h3>
                 <div class="dropdown-content">
-                <div class="project-icons">
-                    <i class="fab fa-cuttlefish" title="C++"></i>
-                    <i class="fab fa-python" title="Python"></i>
-                </div>
-                <p>This project integrates autonomous navigation tools using the ROS2 framework into the WAVEGO quadruped robot. A Raspberry Pi 4, LIDAR, and ROS2 were added, along with a 3D robot model, a 3D-printed LIDAR mount, and a ROS2 environment configured on a virtual remote machine. Effective communication between the robot and the virtual machine was established to enable navigation and control through custom nodes. By incorporating LIDAR-based perception, the project enhances the robot's navigation and control, enabling potential applications in tasks like inspection and surveillance in enclosed environments.</p>
-            </div>
-            <div class="project-card">
-                <h3>Educative arm robot with Lego</h3>
-                <div class="project-icons">
-                    <i class="fab fa-python" title="Python"></i>
-                </div>
-                <p>This project developed a robotic arm using Lego Education and a custom web interface to simulate chemical experiments, aiming to inspire children, especially girls, to explore technology, programming, and robotics. The robot offers extensive movement and mimics industrial robots, while the web interface provides dual functionality: managing access and usage for teachers or event coordinators, and offering intuitive controls, mode selection, and simplified programming for kids. This approach aims to make the experience engaging and encourage interest in technological fields.</p>
+                    <div class="project-icons">
+                        <i class="fab fa-cuttlefish" title="C++"></i>
+                        <i class="fab fa-python" title="Python"></i>
+                    </div>
+                    <p>This project integrates autonomous navigation tools using the ROS2 framework into the WAVEGO quadruped robot. A Raspberry Pi 4, LIDAR, and ROS2 were added, along with a 3D robot model, a 3D-printed LIDAR mount, and a ROS2 environment configured on a virtual remote machine. Effective communication between the robot and the virtual machine was established to enable navigation and control through custom nodes. By incorporating LIDAR-based perception, the project enhances the robot's navigation and control, enabling potential applications in tasks like inspection and surveillance in enclosed environments.</p>
                 </div>
             </div>
             <div class="project-card">
-                <h3>Prosthetic arm hardware design</h3>
-                <p>This project involved designing a custom PCB featuring an ESP32 microcontroller to control brushless motors based on signals from EMG sensors. The system enables precise control of a prosthetic arm, translating muscle activity into smooth and responsive movements.</p>
+                <h3 class="dropdown-title">Educative arm robot with Lego</h3>
+                <div class="dropdown-content">
+                    <div class="project-icons">
+                        <i class="fab fa-python" title="Python"></i>
+                    </div>
+                    <p>This project developed a robotic arm using Lego Education and a custom web interface to simulate chemical experiments, aiming to inspire children, especially girls, to explore technology, programming, and robotics. The robot offers extensive movement and mimics industrial robots, while the web interface provides dual functionality: managing access and usage for teachers or event coordinators, and offering intuitive controls, mode selection, and simplified programming for kids. This approach aims to make the experience engaging and encourage interest in technological fields.</p>
+                </div>
             </div>
             <div class="project-card">
-                <h3>IoT plant monitoring</h3>
-                <div class="project-icons">
-                    <i class="fab fa-html5" title="HTML5"></i>
-                    <i class="fab fa-css3-alt" title="CSS3"></i>
-                    <i class="fab fa-js-square" title="JavaScript"></i>
-                    <i class="fab fa-cuttlefish" title="C++"></i>
+                <h3 class="dropdown-title">Prosthetic arm hardware design</h3>
+                <div class="dropdown-content">
+                    <p>This project involved designing a custom PCB featuring an ESP32 microcontroller to control brushless motors based on signals from EMG sensors. The system enables precise control of a prosthetic arm, translating muscle activity into smooth and responsive movements.</p>
                 </div>
-                <p>This project is designed to monitor the environmental conditions of a plant through a website and send alert messages via the WhatsApp API when critical conditions are detected. This project leverages an ESP8266-based web server to collect and display real-time sensor data, allowing plant owners to remotely track the well-being of their plants.</p>
+            </div>
+            <div class="project-card">
+                <h3 class="dropdown-title">IoT plant monitoring</h3>
+                <div class="dropdown-content">
+                    <div class="project-icons">
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                        <i class="fab fa-js-square" title="JavaScript"></i>
+                        <i class="fab fa-cuttlefish" title="C++"></i>
+                    </div>
+                    <p>This project is designed to monitor the environmental conditions of a plant through a website and send alert messages via the WhatsApp API when critical conditions are detected. This project leverages an ESP8266-based web server to collect and display real-time sensor data, allowing plant owners to remotely track the well-being of their plants.</p>
+                </div>
             </div>
 
         </section>
         <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to connect with me through the following platforms:</p>
+            <h2>CONTACT</h2>
+            <p>Feel free to know more about my projects or connect with me through the following platforms:</p>
             <div class="contact-links">
               <a href="https://www.linkedin.com/in/arnau-crespo-santamaria-57675921b/" target="_blank" class="contact-link">
                 <i class="fab fa-linkedin"></i> LinkedIn

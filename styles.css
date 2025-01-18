@@ -156,25 +156,27 @@ h2 {
     transition: color 0.3s ease;
   }
   
-  .dropdown-title:hover {
-    color: #f9e79f; /* Highlight on hover */
+/* Dropdown Content */
+.dropdown-content {
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden; /* Hide overflowing content */
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Smooth transition */
+    padding: 0; /* No padding when collapsed */
+    margin-left: 5px; /* Optional styling */
   }
   
-  /* Dropdown Content */
-  .dropdown-content {
-    display: none; /* Hidden by default */
-    padding: 10px 0;
-    border-left: 2px solid #ff9800;
-    margin-left: 10px;
+  .dropdown-content.open {
+    max-height: 500px; /* Arbitrary high value to allow expansion */
+    padding: 10px 0; /* Add padding when expanded */
   }
   
-  .dropdown-content p {
-    margin: 5px 0;
+  /* Style active dropdown title (optional) */
+  .dropdown-title.active {
+    font-weight: bold;
+    color: #f9e79f;
+    cursor: pointer;
   }
   
-  .dropdown-content .project-icons {
-    margin-top: 10px;
-  }
 /* Footer */
 footer {
     text-align: center;
