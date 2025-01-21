@@ -19,18 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Create the custom cursor
     document.addEventListener('mousemove', (e) => {
-        const trail = document.createElement('div');
-        trail.classList.add('trail');
-        document.body.appendChild(trail);
-      
-        trail.style.left = `${e.pageX}px`;
-        trail.style.top = `${e.pageY}px`;
-      
-        // Remove the trail after the animation ends
-        setTimeout(() => {
-          trail.remove();
-        }, 600); // Match animation duration
-      });
+      const trail = document.createElement('div');
+      trail.classList.add('trail');
+      document.body.appendChild(trail);
+    
+      // Adjust for scrolling using window.scrollY
+      trail.style.left = `${e.pageX}px`;
+      trail.style.top = `${e.pageY}px`;
+    
+      // Remove the trail after the animation ends
+      setTimeout(() => {
+        trail.remove();
+      }, 600); // Match animation duration in CSS
+    });
+    
       
 
   });
