@@ -25,7 +25,20 @@
     <main>
         <section id="about">
             <h2>ABOUT ME</h2>
-            <p>Hello there! This is my porfolio website designed by me, I'm an Electronics & Robotics Engineer with a passion for developing creative projects. I specialize in hardware, robotics, and embedded systems design.</p>
+            <div class="about-container">
+                <!-- About Me Text -->
+                <div class="about-text">
+                    <p>Hi there! I'm <strong>Arnau Crespo</strong>, an <strong>Electronics & Robotics Engineer</strong> passionate about hardware design, embedded systems, and robotics. I love bringing ideas to life, from designing PCBs to programming Intelligent autonomous systems.</p>
+        
+                    <p>With a strong background in embedded firmware, IoT, and automation, I enjoy tackling complex challenges and developing cutting-edge technology. My work spans from robotics and industrial automation to innovative DIY projects.</p>
+        
+                    <p>When I’m not working on electronics, you’ll probably find me playing basketball or hiking in Montserrat mountain, exploring nature, or diving into a new tech challenge like teaching electronic basics.</p>
+                </div>
+                <!-- Profile Image -->
+                <div class="about-image">
+                    <img src="assets/ALF.jpeg" alt="Arnau Crespo - Electronics Engineer">
+                </div>
+            </div>
         </section>
         <section id="projects">
             <h2>PROJECTS</h2>
@@ -35,8 +48,15 @@
                     <div class="project-icons">
                         <i class="fab fa-cuttlefish" title="C++"></i>
                         <i class="fab fa-python" title="Python"></i>
+                        <a href="https://github.com/arnaucresp0/WAVEGO_VM" target="_blank" class="github-icon">
+                            <i class="fab fa-github" title="GitHub Repository"></i>
+                        </a>
                     </div>
                     <p>This project integrates autonomous navigation tools using the ROS2 framework into the WAVEGO quadruped robot. A Raspberry Pi 4, LIDAR, and ROS2 were added, along with a 3D robot model, a 3D-printed LIDAR mount, and a ROS2 environment configured on a virtual remote machine. Effective communication between the robot and the virtual machine was established to enable navigation and control through custom nodes. By incorporating LIDAR-based perception, the project enhances the robot's navigation and control, enabling potential applications in tasks like inspection and surveillance in enclosed environments.</p>
+                    <div class="project-gallery">
+                        <img src="assets\TFM_3D_robot_design.png" alt="Lego Arm Robot with gripper">
+                        <img src="assets\TFM_real_robot.png" alt="Lego Arm Robot with pippette">
+                    </div>
                 </div>
             </div>
             <div class="project-card">
@@ -44,9 +64,11 @@
                 <div class="dropdown-content">
                     <div class="project-icons">
                         <i class="fab fa-python" title="Python"></i>
+                        <a href="https://quibot.upc.edu/" target="_blank" class="webpage-icon">
+                            <i class="fas fa-globe" title="Project Website"></i>
+                        </a>
                     </div>
                     <p>This project developed a robotic arm using Lego Education and a custom web interface to simulate chemical experiments, aiming to inspire children, especially girls, to explore technology, programming, and robotics. The robot offers extensive movement and mimics industrial robots, while the web interface provides dual functionality: managing access and usage for teachers or event coordinators, and offering intuitive controls, mode selection, and simplified programming for kids. This approach aims to make the experience engaging and encourage interest in technological fields.</p>
-                    <!-- Image gallery -->
                     <div class="project-gallery">
                         <img src="assets\TFG_robot_gripper.png" alt="Lego Arm Robot with gripper">
                         <img src="assets\TFG_robot_pippette.png" alt="Lego Arm Robot with pippette">
@@ -56,6 +78,11 @@
             <div class="project-card">
                 <h3 class="dropdown-title">Custom ESP32-Based PCB for EMG-Controlled Prosthetic Arm</h3>
                 <div class="dropdown-content">
+                    <div class="project-icons">
+                        <a href="https://arm2u-etseib.upc.edu/wp/" target="_blank" class="webpage-icon">
+                            <i class="fas fa-globe" title="Project Website"></i>
+                        </a>
+                    </div>
                     <p>This project involved designing a custom PCB featuring an ESP32 microcontroller to control brushless motors based on signals from EMG sensors. The system enables precise control of a prosthetic arm, translating muscle activity into smooth and responsive movements.</p>
                     <!-- Image gallery -->
                     <div class="project-gallery">
@@ -71,8 +98,25 @@
                         <i class="fab fa-css3-alt" title="CSS3"></i>
                         <i class="fab fa-js-square" title="JavaScript"></i>
                         <i class="fab fa-cuttlefish" title="C++"></i>
+                        <a href="https://github.com/arnaucresp0/IoT_Porject" target="_blank" class="github-icon">
+                            <i class="fab fa-github" title="GitHub Repository"></i>
+                        </a>
                     </div>
                     <p>This project is designed to monitor the environmental conditions of a plant through a website and send alert messages via the WhatsApp API when critical conditions are detected. This project leverages an ESP8266-based web server to collect and display real-time sensor data, allowing plant owners to remotely track the well-being of their plants.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3 class="dropdown-title">Self porfolio website</h3>
+                <div class="dropdown-content">
+                    <div class="project-icons">
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                        <i class="fab fa-js-square" title="JavaScript"></i>
+                        <a href="https://github.com/arnaucresp0/self_porfolio" target="_blank" class="github-icon">
+                            <i class="fab fa-github" title="GitHub Repository"></i>
+                        </a>
+                    </div>
+                    <p></p>
                 </div>
             </div>
 
